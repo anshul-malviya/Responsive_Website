@@ -47,3 +47,6 @@ section{
 .bg-primary{
     background:rgb(67, 196, 201)
 }
+.bg-dark{
+    background: cornsilk;
+}
