@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: linear-gradient(rgb(51, 201, 201),lightgreen);
+    position: sticky;
+    top: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+}
+.list-item{
+    padding-right: 13px;
+    list-style: none;
+}
+nav a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+h1,h2{
+    font-size:30px;
+    font-weight: 900;
+    line-height: 1;
+}
+P{
+    padding: 1em 0;
+}
+.container{
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+section{
+    padding: 3em 0;
+}
+.text-center{
+    text-align: center;
+}
+.bg-primary{
+    background:rgb(67, 196, 201)
+}
