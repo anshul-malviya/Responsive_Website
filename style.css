@@ -3,8 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
 header{
-    background: linear-gradient(rgb(51, 201, 201),lightgreen);
+    background: #2c2828;
     position: sticky;
     top: 0;
 }
@@ -21,7 +27,7 @@ header{
     list-style: none;
 }
 nav a{
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
@@ -31,12 +37,21 @@ h1,h2{
     font-weight: 900;
     line-height: 1;
 }
-P{
-    padding: 1em 0;
+p{
+    padding-bottom: 1em;
+}
+h2,P{
+    margin: .5em 0;
 }
 .container{
     margin-inline: auto;
     width: min(90%, 70.5rem);
+}
+.container-narrow{
+    max-width: 34rem;
+}
+.container-narrow p{
+    text-align: justify;
 }
 section{
     padding: 3em 0;
@@ -44,9 +59,38 @@ section{
 .text-center{
     text-align: center;
 }
+.content{
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.split{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+}
+@media (min-width: 40em){
+    .split{
+        flex-direction: row;
+    }
+    .split > *{
+        flex-basis: 100%;
+    }
+    .split > * + * {
+        margin-left: 3em;
+    }
+}
 .bg-primary{
     background:rgb(67, 196, 201)
 }
-.bg-dark{
+.bg-light{
     background: cornsilk;
+}
+footer{
+    background: #2c2828;
+    color: white;
+    text-align: center;
+    padding: 1em .2em;
 }
